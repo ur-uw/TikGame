@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tiktok Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 400px) {
+            .container{
+                margin: 0 auto;
+                margin-top: 40%;
+                width: 350px;
+                height: 375px;
+            }
+            .square-container{
+                width: 325px;
+                height: 100px;
+            }
+            .square-container
+            .squares{
+                width: 110px;
+                height: 100px ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1>TikTok Game</h1>
+        <div class="square-container">
+            <span id="first" class="squares first-row"></span>
+            <span  id="second" class="squares first-row"></span>
+            <span  id="third" class="squares first-row"></span>
+        </div>
+        <div class="square-container">
+            <span id="fourth" class="squares second-row"></span>
+            <span id="fifth" class="squares second-row"></span>
+            <span id="six" class="squares second-row"></span>
+        </div>
+        <div  class="square-container">
+            <span id="seven" class="squares third-row"></span>
+            <span id="eight" class="squares third-row"></span>
+            <span id="nine" class="squares third-row"></span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
