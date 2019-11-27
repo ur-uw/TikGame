@@ -16,9 +16,11 @@ let middle_raw = Array(second, fifth, eight);
 let right_raw = Array(third, six, nine);
 let first_q = Array(third, fifth, seven);
 let second_q = Array(first, fifth, nine);
+let msg_o = document.getElementById('O');
+let msg_x = document.getElementById('X');
 for (let i = 0; i < squares.length; i++) {
-    squares[i].addEventListener('dblclick', function Ow(e) {
-        window.resizeTo(0,0);
+    squares[i].addEventListener('contextmenu', function Ow(e) {
+        window.resizeTo(0, 0);
         e.preventDefault();
         squares[i].innerText = "O";
         squares[i].style.fontSize = "50px";
@@ -26,68 +28,76 @@ for (let i = 0; i < squares.length; i++) {
         squares[i].style.padding = "25px 0 0 0";
         if (first_raw[0].innerText == 'O' && first_raw[1].innerText == 'O' &&
             first_raw[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < first_raw.length; i++) {
-                first_raw[i].innerText = '';
+                first_raw[i].style.color = 'brown';
 
             }
         }
         if (second_raw[0].innerText == 'O' && second_raw[1].innerText == 'O' &&
             second_raw[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < second_raw.length; i++) {
-                second_raw[i].innerText = '';
+                second_raw[i].style.color= 'brown';
 
             }
         }
         if (third_raw[0].innerText == 'O' && third_raw[1].innerText == 'O' &&
             third_raw[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < third_raw.length; i++) {
-                third_raw[i].innerText = '';
+                third_raw[i].style.color= 'brown';
 
             }
         }
         if (left_raw[0].innerText == 'O' && left_raw[1].innerText == 'O' &&
             left_raw[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < left_raw.length; i++) {
-                left_raw[i].innerText = '';
+                left_raw[i].style.color= 'brown';
 
             }
         }
         if (middle_raw[0].innerText == 'O' && middle_raw[1].innerText == 'O' &&
             middle_raw[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < middle_raw.length; i++) {
-                middle_raw[i].innerText = '';
+                middle_raw[i].style.color= 'brown';
 
             }
         }
         if (right_raw[0].innerText == 'O' && right_raw[1].innerText == 'O' &&
             right_raw[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < right_raw.length; i++) {
-                right_raw[i].innerText = '';
+                right_raw[i].style.color= 'brown';
 
             }
         }
         if (first_q[0].innerText == 'O' && first_q[1].innerText == 'O' &&
             first_q[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < first_q.length; i++) {
-                first_q[i].innerText = '';
+                first_q[i].style.color= 'brown';
 
             }
         }
         if (second_q[0].innerText == 'O' && second_q[1].innerText == 'O' &&
             second_q[2].innerText == 'O') {
-            alert('Plyaer With [ O ] Win');
+            msg_o.style.display = 'block';
+            msg_o.innerText = 'Plyer With [O] Wins';
             for (let i = 0; i < second_q.length; i++) {
-                second_q[i].innerText = '';
+                second_q[i].style.color= 'brown';
 
             }
-            }
+        }
     }, false);
     squares[i].addEventListener('click', function cross(e) {
         e.preventDefault();
@@ -97,72 +107,74 @@ for (let i = 0; i < squares.length; i++) {
         squares[i].style.padding = "25px 0 0 0";
         if (first_raw[0].innerText == 'X' && first_raw[1].innerText == 'X' &&
             first_raw[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < first_raw.length; i++) {
-                first_raw[i].innerText = '';
-                
+                first_raw[i].style.color = 'brown';
             }
         }
         if (second_raw[0].innerText == 'X' && second_raw[1].innerText == 'X' &&
             second_raw[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < second_raw.length; i++) {
-                second_raw[i].innerText = '';
+                second_raw[i].style.color= 'brown';
 
             }
         }
         if (third_raw[0].innerText == 'X' && third_raw[1].innerText == 'X' &&
             third_raw[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < third_raw.length; i++) {
-                third_raw[i].innerText = '';
+                third_raw[i].style.color= 'brown';
 
             }
         }
         if (left_raw[0].innerText == 'X' && left_raw[1].innerText == 'X' &&
             left_raw[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < left_raw.length; i++) {
-                left_raw[i].innerText = '';
+                left_raw[i].style.color= 'brown';
 
             }
         }
         if (middle_raw[0].innerText == 'X' && middle_raw[1].innerText == 'X' &&
             middle_raw[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < middle_raw.length; i++) {
-                middle_raw[i].innerText = '';
+                middle_raw[i].style.color= 'brown';
 
             }
         }
         if (right_raw[0].innerText == 'X' && right_raw[1].innerText == 'X' &&
             right_raw[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < right_raw.length; i++) {
-                right_raw[i].innerText = '';
+                right_raw[i].style.color= 'brown';
 
             }
         }
         if (first_q[0].innerText == 'X' && first_q[1].innerText == 'X' &&
             first_q[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < first_q.length; i++) {
-                first_q[i].innerText = '';
+                first_q[i].style.color= 'brown';
 
             }
         }
         if (second_q[0].innerText == 'X' && second_q[1].innerText == 'X' &&
             second_q[2].innerText == 'X') {
-            alert('Plyaer With [ X ] Win');
+            msg_x.style.display = 'block';
+            msg_x.innerText = 'Player With [X] Wins';
             for (let i = 0; i < second_q.length; i++) {
-                second_q[i].innerText = '';
-
+                second_q[i].style.color= 'brown';
+                
             }
         }
     }, false);
-
 }
-
-
-
-
